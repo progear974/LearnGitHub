@@ -9,6 +9,8 @@ jobs:
     
     steps:
     - uses: actions/checkout@v2
+    - name: Image Epitech
+      uses: docker://epitechcontent/epitest-docker:latest
     - name: install criterion
       run : |
         sudo add-apt-repository ppa:snaipewastaken/ppa
