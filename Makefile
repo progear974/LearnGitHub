@@ -5,12 +5,12 @@
 ## Makefile
 ##
 
-SRC_WM_NAME	=
+SRC_WM_NAME	=	my_strlen.c
 
 SRC_NAME	=	$(SRC_WM_NAME)	\
 			main.c
 
-TEST_NAME	=
+TEST_NAME	=	test_strlen.c
 
 SRC_WM		=	$(SRC_WM_NAME)
 
@@ -38,6 +38,8 @@ $(NAME):		$(OBJ)
 
 clean:
 			rm -rf $(OBJ)
+			rm -rf *.gcda
+			rm -rf *.gcno
 
 fclean:			clean
 			rm -rf $(NAME)
